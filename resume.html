@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+    Author: Jadepat Chernsonthi
+    Course: CST8285_314
+    Assesment: Assignment 1
+    File Name: resume.html
+    Professor: Malek Al-Kouzi
+    Date Created: Feb 04, 2023
+    Date Modified: Mar 06, 2023
+    Due Date: Mar 12, 2023
+    Version: 3.1
+    Description: A home webpage displays my resume
+    Changelog:  - fixed error indicated in HTML Validator
+                - various bugs fixed
+                - tidy up the file
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=" author " content=" jadepat chernsonthi">
+        <meta name=" description " content=" assesment 1">
+        <meta name=" keywords " content=" jadepat,chernsonthi,resume">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+        <script>
+            // reveal scrolling
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    }
+                }
+            }
+
+            window.addEventListener("scroll", reveal);
+        </script>
+
+        <title>Resume</title>
+
+    </head>
+    <body>
+            <nav>
+                <div class="topnav">
+                    <div class="logo"><a href="index.html">Jadepat Chersonthi</a><span class="job-title">Web developer</span></div>
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger">
+                    <div class="menu">
+                        <a href="index.html">Home</a>
+                        <a href="aboutme.html">About me</a>
+                        <a class="active" href="resume.html">Resume</a>
+                        <a href="courses.html">Courses</a>
+                    </div>
+                </div>
+            </nav>
+
+        <div class="fade-in-bottom"> 
+            <div class="margin">
+                <div class="wrapper-left">
+                    <img src="img/html.jpg" alt="html-code">
+                    <div class="flex-container">
+                        <div class="flex-container-child">
+                            <div class="quo">&ldquo;</div>
+                            <div class="text-format">
+                                I am proeficient with HTML, CSS, and Javascript. I am capable creating aesthetic websites. Look at this website for an example.
+                            It is beautiful, isn't it? You can see some example of my works below
+                            </div>
+                            <div class="quo">&bdquo;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal fade-bottom">
+            <div class="margin">
+                <div class="work-container">
+                    <h3 id="wex">Work Samples</h3>
+                    <div class="img-link">
+                        <div class="img-container">
+                            <a href="Lab1/hometown.html" target="_blank" rel="noopener noreferrer"><img src="img/slide-1.jpg" alt="lab1"></a>
+                            <div class="middle-container">
+                                <p>Lab 1: HTML Basics</p>
+                            </div>
+                        </div>
+                        <div class="img-container">
+                            <a href="Lab2/customer.html" target="_blank" rel="noopener noreferrer"><img src="img/slide-2.jpg" alt="lab2"></a>
+                            <div class="middle-container">
+                                <p>Lab 2: HTML Form & CSS basics</p>
+                            </div>
+                        </div>
+                        <div class="img-container">
+                            <a href="Lab3/lab3-css/Lab3.html" target="_blank" rel="noopener noreferrer"><img src="img/slide-3.jpg" alt="lab3-a"></a>
+                            <div class="middle-container">
+                                <p>Lab 3 Part A: CSS</p>
+                            </div>
+                        </div>
+                        <div class="img-container">
+                            <a href="Lab3/lab3-bootstrap/lab3.html" target="_blank" rel="noopener noreferrer"><img src="img/slide-4.jpg" alt="lab3-b"></a>
+                            <div class="middle-container">
+                                <p>Lab 3 Part B: Intro to Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="reveal fade-bottom">
+            <div class="margin">
+                <div class="wrapper-right">
+                    <div id="div1" class="flex-container-child" >
+                        <div class="quo">&ldquo;</div>
+                        <div class="text-format">
+                            I am also proeficient with Java. I am capable creating program and to ask user to input data 
+                            and calculate some math with those data.  
+                        </div>
+                        <div class="quo">&bdquo;</div>
+                    </div>
+                    <img src="img/java.jpg" alt="java-code">
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="reveal fade-bottom"> 
+            <div class="margin">
+                <div class="wrapper-left">
+                    <img src="img/sql.jpg" alt="html-code">
+                    <div class="flex-container-child" >
+                        <div class="quo">&ldquo;</div>
+                        <div class="text-format">
+                            I can do some SQL qurries to recieve data from database and doing some database administrator works.
+                        </div>
+                        <div class="quo">&bdquo;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="margin">
+                <hr>
+                <div class="footer-container">
+                    <div class="bold-text">Contact</div>
+                    <div class="footer-logo">
+                        <a href="https://www.linkedin.com/in/jadepat-chernsonthi" target="_blank" rel="noopener noreferrer"><img src="img/logo/linkedin.png" alt="linkedin"></a>
+                        <a href="https://www.facebook.com/jadepat.chern" target="_blank" rel="noopener noreferrer"><img src="img/logo/facebook.png" alt="facebook"></a>
+                        <a href="mailto:jadepat.c@gmail.com" target="_blank" rel="noopener noreferrer"><img src="img/logo/email.png" alt="email"></a>
+                    </div>
+                    <div>Jadepat Chernsonthi</div>
+                    <p>2023 Copyright</p>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="top">Back to Top &#8593;</a>
+    </body>
+</html>

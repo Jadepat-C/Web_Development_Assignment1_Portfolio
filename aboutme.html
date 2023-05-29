@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+    Author: Jadepat Chernsonthi
+    Course: CST8285_314
+    Assesment: Assignment 1
+    File Name: aboutme.html
+    Professor: Malek Al-Kouzi
+    Date Created: Feb 04, 2023
+    Date Modified: Mar 06, 2023
+    Due Date: Mar 12, 2023
+    Version: 5.1
+    Description: A home webpage displays my infomantion
+    Changelog:  - fixed error indicated in HTML Validator
+                - various bugs fixed
+                - tidy up the file
+-->
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name=" author " content=" jadepat chernsonthi">
+            <meta name=" description " content=" assesment 1">
+            <meta name=" keywords " content=" jadepat,chernsonthi,info">
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+            <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+            <script>
+                    function reveal() {
+                        var reveals = document.querySelectorAll(".reveal");
+
+                        for (var i = 0; i < reveals.length; i++) {
+                            var windowHeight = window.innerHeight;
+                            var elementTop = reveals[i].getBoundingClientRect().top;
+                            var elementVisible = 150;
+
+                            if (elementTop < windowHeight - elementVisible) {
+                            reveals[i].classList.add("active");
+                            }
+                        }
+                    }
+                    window.addEventListener("scroll", reveal);
+            </script>
+
+            <title>About me</title>
+        </head>
+        <body> 
+            <nav>
+                <div class="topnav">
+                    <div class="logo"><a href="index.html">Jadepat Chersonthi</a><span class="job-title">Web developer</span></div>
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger">
+                    <div class="menu">
+                        <a href="index.html">Home</a>
+                        <a class="active" href="aboutme.html">About me</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="courses.html">Courses</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="fade-in-bottom"> 
+                <div class="margin">
+                    <div class="wrapper-left">
+                        <img src="img/me.jpg" alt="jadepat-chernsonthi-picture">
+                        <div class="flex-container-child" >
+                            <div class="quo">&ldquo;</div>
+                            <div class="text-format">
+                                I am <span class="bold-text">Jadepat Chernsonthi</span> from Thailand. 
+                                Currently, I am studying at Algonquin College in <span class="bold-text">Computer programming</span>. It locates in Ottawa, Canada. 
+                                I am passionate about web programming and looking forward to working in this field.
+                            </div>
+                            <div class="quo">&bdquo;</div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            
+
+                <div class="reveal fade-bottom">
+                    <div class="margin">
+                        <div class="wrapper-right">
+                            <div id="div1" class="flex-container-child" >
+                                <div class="quo">&ldquo;</div>
+                                <div class="text-format">
+                                    When I have free time, I usually play games. I like playing <span class="bold-text">RPG</span>, 
+                                    <span class="bold-text">FPS</span>, and <span class="bold-text">TCG</span> games.
+                                </div>
+                                <div class="quo">&bdquo;</div>
+                            </div>
+                            <div id="div2" class="img-crossfade">
+                                <img id="f1" src="img/genshin.jpg" alt="genshin-impact">
+                                <img id="f2" src="img/bf4.jpg" alt="bf4">
+                                <img id="f3" src="img/masterduel.jpg" alt="masterduel">
+                            </div>
+                        </div><hr>
+                    </div>
+                    
+                </div>
+
+                <div class="reveal fade-bottom">
+                    <div class="margin">
+                        <div class="wrapper-left">
+                            <img src="img/ac1.jpg" alt="algonquin-college">
+                            <div class="flex-container">
+                                <div class="flex-container-child" >
+                                    <div class="quo">&ldquo;</div>
+                                    <div class="text-format">
+                                        Algonquin College of Applied Arts and Technology was established in 1967 and was named after the First Nations people 
+                                        who lived in the area. Algonquin was formed from the merger of the Eastern Ontario Institute of Technology, established 1957, 
+                                        and the Ontario Vocational Centre, established 1965.
+                                    </div>
+                                    <div class="quo">&bdquo;</div>
+                                </div>
+                                <div class="link-button">
+                                    <a href="https://www.algonquincollege.com/" class="para-link" target="_blank" rel="noopener noreferrer">Check out college website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        
+        
+            <footer>
+                <div class="margin">
+                    <hr>
+                    <div class="footer-container">
+                        <div class="bold-text">Contact</div>
+                        <div class="footer-logo">
+                            <a href="https://www.linkedin.com/in/jadepat-chernsonthi" target="_blank" rel="noopener noreferrer"><img src="img/logo/linkedin.png" alt="linkedin"></a>
+                            <a href="https://www.facebook.com/jadepat.chern" target="_blank" rel="noopener noreferrer"><img src="img/logo/facebook.png" alt="facebook"></a>
+                            <a href="mailto:jadepat.c@gmail.com" target="_blank" rel="noopener noreferrer"><img src="img/logo/email.png" alt="email"></a>
+                        </div>
+                        <div>Jadepat Chernsonthi</div>
+                        <p>2023 Copyright</p>
+                    </div>
+                </div>
+            </footer>
+            <a href="#" class="top">Back to Top &#8593;</a>
+        </body>
+    </html>
